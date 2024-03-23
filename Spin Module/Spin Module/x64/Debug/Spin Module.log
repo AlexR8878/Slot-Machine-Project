@@ -1,0 +1,3 @@
+﻿  spin.c
+C:\Users\User\source\repos\Section-1-Group-1\Spin Module\Spin Module\spin.c(24,29): warning C4305: 'initializing': truncation from 'double' to 'float'
+  Spin Module.vcxproj -> C:\Users\User\source\repos\Section-1-Group-1\Spin Module\x64\Debug\Spin Module.exe

@@ -1,0 +1,5 @@
+﻿  pch.cpp
+  Spin_Module_Unit_Tests.cpp
+     Creating library C:\Users\User\source\repos\Section-1-Group-1\Spin Module\x64\Debug\Spin_Module_Unit_Tests.lib and object C:\Users\User\source\repos\Section-1-Group-1\Spin Module\x64\Debug\Spin_Module_Unit_Tests.exp
+spin.obj : error LNK2019: unresolved external symbol usleep referenced in function spin_effect
+C:\Users\User\source\repos\Section-1-Group-1\Spin Module\x64\Debug\Spin_Module_Unit_Tests.dll : fatal error LNK1120: 1 unresolved externals
