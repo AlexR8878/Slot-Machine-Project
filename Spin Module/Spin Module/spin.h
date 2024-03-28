@@ -7,7 +7,7 @@
 #include <windows.h>
 
 #define SYMBOLS  { '7', '~', '!', '@', '#', '$', '%', '^', '&', '*', '`', '/', '?', '<', '>' } // Symbols used for the slot machine
-#define SYMBOL_VALUES   { 10.0, 5.0, 2.5, 2.0, 1.5, 1.0, 0.5, 0.25, 0.1, 0.05, 0.02, 0.01, 0.005, 0.002, 0.001 } // Values used for each symbol. Value position in the arrary corresonds to SYMBOL value in the same postion.
+#define SYMBOL_VALUES   { 100.0, 50.0, 25.0, 20.0, 15.0, 10.0, 5.0, 2.5, 1.0, 0.50, 0.25, 0.10, 0.05, 0.025, 0.01 } // Values used for each symbol. Value position in the arrary corresonds to SYMBOL value in the same postion.
 #define SPIN_EFFECT_CYCLE   10 // Change this to increase/decrease the number of cycles
 #define NUM_SYMBOLS     15
 

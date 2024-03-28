@@ -33,24 +33,29 @@ float calculateWinnings(int lines, float gamble_amount, char spin_results[3][3])
             for (int k = 0; k < NUM_SYMBOLS; k++) {
                 if (spin_results[i][0] == symbols[k]) {
                     winnings += symbol_values[k] * gamble_amount;
+                    break; // Break out of the loop once the symbol is found
                 }
             }
             matching_lines++;
         }
     }
 
-    // If no matching lines, return 0
-    if (matching_lines == 0) {
-        return 0.0;
-    }
-
-    // Check for "X" pattern and apply 2x bonus
-    if (lines == 3 && spin_results[0][0] == spin_results[1][1] && spin_results[1][1] == spin_results[2][2] && spin_results[0][2] == spin_results[1][1] && spin_results[1][1] == spin_results[2][0]) {
-        winnings *= 2;
+    // Calculate winnings for "X" pattern separately if no matching lines
+    if (matching_lines == 0 && lines == 3) {
+        if (spin_results[0][0] == spin_results[1][1] && spin_results[1][1] == spin_results[2][2] &&
+            spin_results[0][2] == spin_results[1][1] && spin_results[1][1] == spin_results[2][0]) {
+            for (int k = 0; k < NUM_SYMBOLS; k++) {
+                if (spin_results[1][1] == symbols[k]) {
+                    winnings = symbol_values[k] * gamble_amount * 2; // Apply 2x bonus for "X" pattern
+                    break; // Break out of the loop once the symbol is found
+                }
+            }
+        }
     }
 
     return winnings;
 }
+
 
 // Spin function
 void spin(Account* account, float gamble_amount, int lines) {
