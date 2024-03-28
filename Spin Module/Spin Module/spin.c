@@ -19,34 +19,42 @@ void spinEffect() {
 }
 
 // Function to calculate the winnings
-float calculateWinnings(int lines, float gamble_amount, char spin_results[3][3]) {
+float calculateWinnings(int lines, float gambleAmount, char spinResults[3][3]) {
     // Define the values for each symbol
-    float symbol_values[] = SYMBOL_VALUES;
+    float symbolValues[] = SYMBOL_VALUES;
     char symbols[] = SYMBOLS;
 
+    // Define multipliers for different line bets
+    float multipliers[] = { 1.5, // Multiplier for one line bet
+                           1.2, // Multiplier for two line bet
+                           1.0 }; // Multiplier for three line bet
+
     // Check for matching lines
-    int matching_lines = 0;
+    int matchingLines = 0;
     float winnings = 0.0;
-    for (int i = 0; i < lines; i++) { // Only consider the number of lines the user has bet on
-        if (spin_results[i][0] == spin_results[i][1] && spin_results[i][1] == spin_results[i][2]) {
+    int lineIndices[3] = { 1, 0, 2 }; // Order of lines to check: middle, top, bottom
+
+    for (int i = 0; i < lines; i++) {
+        int lineToCheck = lineIndices[i];
+        if (spinResults[lineToCheck][0] == spinResults[lineToCheck][1] && spinResults[lineToCheck][1] == spinResults[lineToCheck][2]) {
             // Find the value of the matching symbol and add it to the winnings
             for (int k = 0; k < NUM_SYMBOLS; k++) {
-                if (spin_results[i][0] == symbols[k]) {
-                    winnings += symbol_values[k] * gamble_amount;
+                if (spinResults[lineToCheck][0] == symbols[k]) {
+                    winnings += symbolValues[k] * gambleAmount * multipliers[lines - 1];
                     break; // Break out of the loop once the symbol is found
                 }
             }
-            matching_lines++;
+            matchingLines++;
         }
     }
 
     // Calculate winnings for "X" pattern separately if no matching lines
-    if (matching_lines == 0 && lines == 3) {
-        if (spin_results[0][0] == spin_results[1][1] && spin_results[1][1] == spin_results[2][2] &&
-            spin_results[0][2] == spin_results[1][1] && spin_results[1][1] == spin_results[2][0]) {
+    if (matchingLines == 0 && lines == 3) {
+        if (spinResults[0][0] == spinResults[1][1] && spinResults[1][1] == spinResults[2][2] &&
+            spinResults[0][2] == spinResults[1][1] && spinResults[1][1] == spinResults[2][0]) {
             for (int k = 0; k < NUM_SYMBOLS; k++) {
-                if (spin_results[1][1] == symbols[k]) {
-                    winnings = symbol_values[k] * gamble_amount * 2; // Apply 2x bonus for "X" pattern
+                if (spinResults[1][1] == symbols[k]) {
+                    winnings = symbolValues[k] * gambleAmount * 2; // Apply 2x bonus for "X" pattern
                     break; // Break out of the loop once the symbol is found
                 }
             }
@@ -58,19 +66,19 @@ float calculateWinnings(int lines, float gamble_amount, char spin_results[3][3])
 
 
 // Spin function
-void spin(Account* account, float gamble_amount, int lines) {
+void spin(Account* account, float gambleAmount, int lines) {
 
     // Array of symbols
     char symbols[] = SYMBOLS;
 
     // Multi-dimensional array to hold the spin results
-    char spin_results[3][3];
+    char spinResults[3][3];
 
     // Fill the spin_results array with random symbols
     for (int i = 0; i < 3; i++) {
         for (int j = 0; j < 3; j++) {
-            int random_symbol_index = rand() % (NUM_SYMBOLS);
-            spin_results[i][j] = symbols[random_symbol_index];
+            int randomSymbolIndex = rand() % (NUM_SYMBOLS);
+            spinResults[i][j] = symbols[randomSymbolIndex];
         }
     }
 
@@ -79,11 +87,11 @@ void spin(Account* account, float gamble_amount, int lines) {
     // Print the slot machine interface
     printf("+-----+-----+-----+\n");
     for (int i = 0; i < 3; i++) {
-        printf("| [%c] | [%c] | [%c] |\n", spin_results[i][0], spin_results[i][1], spin_results[i][2]);
+        printf("| [%c] | [%c] | [%c] |\n", spinResults[i][0], spinResults[i][1], spinResults[i][2]);
         printf("+-----+-----+-----+\n");
     }
 
-    float winnings = calculateWinnings(lines, gamble_amount, spin_results);
+    float winnings = calculateWinnings(lines, gambleAmount, spinResults);
     if (winnings > 0) {
         printf("You won %.2f\n", winnings);
     }
@@ -92,10 +100,10 @@ void spin(Account* account, float gamble_amount, int lines) {
     }
 
     account->balance.winnings += winnings;
-    account->balance.account_balance += winnings - gamble_amount;
+    account->balance.accountBalance += winnings - gambleAmount;
 
     printf("Your total winnings so far are %.2f\n", account->balance.winnings);
-    printf("Your new balance is %.2f\n", account->balance.account_balance);
+    printf("Your new balance is %.2f\n", account->balance.accountBalance);
 }
 
 // Function to return to main menu
@@ -105,14 +113,14 @@ void returnToMainMenu() {
 
 // Function to start the Spin module
 void startSpinModule(Account account) {
-    float gamble_amount;
+    float gambleAmount;
     int lines;
     int spins;
-    char continue_playing;
+    char continuePlaying;
 
     do {
         printf("Enter amount gambled per spin: ");
-        scanf("%f", &gamble_amount);
+        scanf("%f", &gambleAmount);
 
         printf("Enter amount of lines: ");
         scanf("%d", &lines);
@@ -121,16 +129,16 @@ void startSpinModule(Account account) {
         scanf("%d", &spins);
 
         for (int i = 0; i < spins; i++) {
-            spin(&account, gamble_amount, lines);
+            spin(&account, gambleAmount, lines);
         }
 
         printf("Your total winnings after %d spins are %.2f\n", spins, account.balance.winnings);
-        printf("Your balance after %d spins is %.2f\n", spins, account.balance.account_balance);
+        printf("Your balance after %d spins is %.2f\n", spins, account.balance.accountBalance);
 
         printf("Do you want to continue playing? (Y/Any other key to stop playing): ");
-        scanf(" %c", &continue_playing); // Note the space before %c to skip any leftover newline characters
+        scanf(" %c", &continuePlaying); // Note the space before %c to skip any leftover newline characters
 
-    } while (continue_playing == 'Y' || continue_playing == 'y');
+    } while (continuePlaying == 'Y' || continuePlaying == 'y');
 
     returnToMainMenu();
 }

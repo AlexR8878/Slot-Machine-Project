@@ -127,8 +127,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="returnToMainMenu_Unit_Tests.c" />
     <ClCompile Include="spin.c" />
-    <ClCompile Include="Spin_Module_Unit_Tests.c" />
+    <ClCompile Include="calculateWinnings_Unit_Tests.c" />
+    <ClCompile Include="spinEffect_Unit_Tests.c" />
+    <ClCompile Include="spin_Unit_Tests.c" />
+    <ClCompile Include="startSpinModule_Unit_Tests.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="spin.h" />

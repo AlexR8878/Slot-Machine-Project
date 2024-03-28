@@ -12,18 +12,18 @@
 #define NUM_SYMBOLS     15
 
 typedef struct {
-    float account_balance;
+    float accountBalance;
     float winnings;
 } Balance;
 
 typedef struct {
-    int user_id;
+    int userId;
     char username[50];
     Balance balance;
 } Account;
 
 void spinEffect();
-float calculateWinnings(int lines, float gamble_amount, char spin_results[3][3]);
-void spin(Account* account, float gamble_amount, int lines);
+float calculateWinnings(int lines, float gambleAmount, char spinResults[3][3]);
+void spin(Account* account, float gambleAmount, int lines);
 void returnToMainMenu();
-void start_spin_module(Account account);
+void startSpinModule(Account account);
