@@ -1,0 +1,1 @@
+Enter amount gambled per spin: Enter amount of lines: Enter number of spins: Insufficient balance. You cannot bet more than your current balance of 100.00

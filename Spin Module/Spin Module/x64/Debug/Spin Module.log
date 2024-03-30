@@ -1,7 +1,4 @@
 ﻿  spin.c
-C:\Users\User\source\repos\Section-1-Group-1\Spin Module\Spin Module\spin.c(24,28): warning C4305: 'initializing': truncation from 'double' to 'float'
-C:\Users\User\source\repos\Section-1-Group-1\Spin Module\Spin Module\spin.c(28,27): warning C4305: 'initializing': truncation from 'double' to 'float'
-  calculateWinnings_Unit_Tests.c
-C:\Users\User\source\repos\Section-1-Group-1\Spin Module\Spin Module\calculateWinnings_Unit_Tests.c(38,57): warning C4305: 'function': truncation from 'double' to 'float'
-  Generating Code...
+C:\Users\User\source\repos\Section-1-Group-1\Spin Module\Spin Module\spin.c(158,37): warning C4244: 'function': conversion from 'double' to 'float', possible loss of data
+C:\Users\User\source\repos\Section-1-Group-1\Spin Module\Spin Module\spin.c(167,94): warning C4244: 'function': conversion from 'double' to 'float', possible loss of data
   Spin Module.vcxproj -> C:\Users\User\source\repos\Section-1-Group-1\Spin Module\x64\Debug\Spin Module.exe

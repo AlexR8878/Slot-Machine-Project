@@ -18,16 +18,13 @@
     <ClCompile Include="spin.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Spin_Module_Unit_Tests.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="calculateWinnings_Unit_Tests.c">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="spin_Unit_Tests.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="spinEffect_Unit_Tests.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="returnToMainMenu_Unit_Tests.c">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="startSpinModule_Unit_Tests.c">
@@ -36,6 +33,15 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="spin.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="calculateWinnings_Unit_Test.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="spin_Unit_Tests.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="startSpinModule_Unit_Tests.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
