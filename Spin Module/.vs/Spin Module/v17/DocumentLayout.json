@@ -3,40 +3,40 @@
   "WorkspaceRootPath": "C:\\Users\\User\\source\\repos\\Section-1-Group-1\\Spin Module\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A1DB4A0C-8E1B-4D2C-9D8B-1E4009FF4A9C}|Spin Module\\Spin Module.vcxproj|C:\\Users\\User\\source\\repos\\Section-1-Group-1\\Spin Module\\Spin Module\\calculateWinnings_Unit_Tests.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A1DB4A0C-8E1B-4D2C-9D8B-1E4009FF4A9C}|Spin Module\\Spin Module.vcxproj|solutionrelative:Spin Module\\calculateWinnings_Unit_Tests.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A1DB4A0C-8E1B-4D2C-9D8B-1E4009FF4A9C}|Spin Module\\Spin Module.vcxproj|C:\\Users\\User\\source\\repos\\Section-1-Group-1\\Spin Module\\Spin Module\\Spin_Module_Unit_Tests.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A1DB4A0C-8E1B-4D2C-9D8B-1E4009FF4A9C}|Spin Module\\Spin Module.vcxproj|solutionrelative:Spin Module\\Spin_Module_Unit_Tests.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A1DB4A0C-8E1B-4D2C-9D8B-1E4009FF4A9C}|Spin Module\\Spin Module.vcxproj|C:\\Users\\User\\source\\repos\\Section-1-Group-1\\Spin Module\\Spin Module\\startSpinModule_Unit_Tests.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A1DB4A0C-8E1B-4D2C-9D8B-1E4009FF4A9C}|Spin Module\\Spin Module.vcxproj|solutionrelative:Spin Module\\startSpinModule_Unit_Tests.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A1DB4A0C-8E1B-4D2C-9D8B-1E4009FF4A9C}|Spin Module\\Spin Module.vcxproj|C:\\Users\\User\\source\\repos\\Section-1-Group-1\\Spin Module\\Spin Module\\spin_Unit_Tests.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A1DB4A0C-8E1B-4D2C-9D8B-1E4009FF4A9C}|Spin Module\\Spin Module.vcxproj|solutionrelative:Spin Module\\spin_Unit_Tests.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A1DB4A0C-8E1B-4D2C-9D8B-1E4009FF4A9C}|Spin Module\\Spin Module.vcxproj|C:\\Users\\User\\source\\repos\\Section-1-Group-1\\Spin Module\\Spin Module\\spin_Unit_Tests.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A1DB4A0C-8E1B-4D2C-9D8B-1E4009FF4A9C}|Spin Module\\Spin Module.vcxproj|solutionrelative:Spin Module\\spin_Unit_Tests.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A1DB4A0C-8E1B-4D2C-9D8B-1E4009FF4A9C}|Spin Module\\Spin Module.vcxproj|C:\\Users\\User\\source\\repos\\Section-1-Group-1\\Spin Module\\Spin Module\\calculateWinnings_Unit_Test.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A1DB4A0C-8E1B-4D2C-9D8B-1E4009FF4A9C}|Spin Module\\Spin Module.vcxproj|solutionrelative:Spin Module\\calculateWinnings_Unit_Test.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A1DB4A0C-8E1B-4D2C-9D8B-1E4009FF4A9C}|Spin Module\\Spin Module.vcxproj|C:\\Users\\User\\source\\repos\\Section-1-Group-1\\Spin Module\\Spin Module\\spin.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A1DB4A0C-8E1B-4D2C-9D8B-1E4009FF4A9C}|Spin Module\\Spin Module.vcxproj|solutionrelative:Spin Module\\spin.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A1DB4A0C-8E1B-4D2C-9D8B-1E4009FF4A9C}|Spin Module\\Spin Module.vcxproj|C:\\Users\\User\\source\\repos\\Section-1-Group-1\\Spin Module\\Spin Module\\spin.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{A1DB4A0C-8E1B-4D2C-9D8B-1E4009FF4A9C}|Spin Module\\Spin Module.vcxproj|solutionrelative:Spin Module\\spin.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A1DB4A0C-8E1B-4D2C-9D8B-1E4009FF4A9C}|Spin Module\\Spin Module.vcxproj|C:\\Users\\User\\source\\repos\\Section-1-Group-1\\Spin Module\\Spin Module\\startSpinModule_Unit_Tests.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{A1DB4A0C-8E1B-4D2C-9D8B-1E4009FF4A9C}|Spin Module\\Spin Module.vcxproj|solutionrelative:Spin Module\\startSpinModule_Unit_Tests.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1DB4A0C-8E1B-4D2C-9D8B-1E4009FF4A9C}|Spin Module\\Spin Module.vcxproj|C:\\Users\\User\\source\\repos\\Section-1-Group-1\\Spin Module\\Spin Module\\spin.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A1DB4A0C-8E1B-4D2C-9D8B-1E4009FF4A9C}|Spin Module\\Spin Module.vcxproj|solutionrelative:Spin Module\\spin.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1DB4A0C-8E1B-4D2C-9D8B-1E4009FF4A9C}|Spin Module\\Spin Module.vcxproj|C:\\Users\\User\\source\\repos\\Section-1-Group-1\\Spin Module\\Spin Module\\Spin_Module_Unit_Tests.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A1DB4A0C-8E1B-4D2C-9D8B-1E4009FF4A9C}|Spin Module\\Spin Module.vcxproj|solutionrelative:Spin Module\\Spin_Module_Unit_Tests.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1DB4A0C-8E1B-4D2C-9D8B-1E4009FF4A9C}|Spin Module\\Spin Module.vcxproj|C:\\Users\\User\\source\\repos\\Section-1-Group-1\\Spin Module\\Spin Module\\calculateWinnings_Unit_Test.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A1DB4A0C-8E1B-4D2C-9D8B-1E4009FF4A9C}|Spin Module\\Spin Module.vcxproj|solutionrelative:Spin Module\\calculateWinnings_Unit_Test.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1DB4A0C-8E1B-4D2C-9D8B-1E4009FF4A9C}|Spin Module\\Spin Module.vcxproj|C:\\Users\\User\\source\\repos\\Section-1-Group-1\\Spin Module\\Spin Module\\calculateWinnings_Unit_Tests.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A1DB4A0C-8E1B-4D2C-9D8B-1E4009FF4A9C}|Spin Module\\Spin Module.vcxproj|solutionrelative:Spin Module\\calculateWinnings_Unit_Tests.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1DB4A0C-8E1B-4D2C-9D8B-1E4009FF4A9C}|Spin Module\\Spin Module.vcxproj|C:\\Users\\User\\source\\repos\\Section-1-Group-1\\Spin Module\\Spin Module\\spin_Unit_Tests.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A1DB4A0C-8E1B-4D2C-9D8B-1E4009FF4A9C}|Spin Module\\Spin Module.vcxproj|solutionrelative:Spin Module\\spin_Unit_Tests.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1DB4A0C-8E1B-4D2C-9D8B-1E4009FF4A9C}|Spin Module\\Spin Module.vcxproj|C:\\Users\\User\\source\\repos\\Section-1-Group-1\\Spin Module\\Spin Module\\spin_Unit_Tests.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A1DB4A0C-8E1B-4D2C-9D8B-1E4009FF4A9C}|Spin Module\\Spin Module.vcxproj|solutionrelative:Spin Module\\spin_Unit_Tests.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1DB4A0C-8E1B-4D2C-9D8B-1E4009FF4A9C}|Spin Module\\Spin Module.vcxproj|C:\\Users\\User\\source\\repos\\Section-1-Group-1\\Spin Module\\Spin Module\\startSpinModule_Unit_Tests.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A1DB4A0C-8E1B-4D2C-9D8B-1E4009FF4A9C}|Spin Module\\Spin Module.vcxproj|solutionrelative:Spin Module\\startSpinModule_Unit_Tests.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,11 +46,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 0,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "spin.h",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Section-1-Group-1\\Spin Module\\Spin Module\\spin.h",
+              "RelativeDocumentMoniker": "Spin Module\\spin.h",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\Section-1-Group-1\\Spin Module\\Spin Module\\spin.h",
+              "RelativeToolTip": "Spin Module\\spin.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-03-22T20:12:40.826Z",
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Bookmark",
@@ -61,8 +71,12 @@
               "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 1,
               "Title": "startSpinModule_Unit_Tests.h",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Section-1-Group-1\\Spin Module\\Spin Module\\startSpinModule_Unit_Tests.h",
               "RelativeDocumentMoniker": "Spin Module\\startSpinModule_Unit_Tests.h",
@@ -74,7 +88,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 8,
               "Title": "startSpinModule_Unit_Tests.c",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Section-1-Group-1\\Spin Module\\Spin Module\\startSpinModule_Unit_Tests.c",
               "RelativeDocumentMoniker": "Spin Module\\startSpinModule_Unit_Tests.c",
@@ -82,25 +96,23 @@
               "RelativeToolTip": "Spin Module\\startSpinModule_Unit_Tests.c",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAA5AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2024-03-29T17:08:17.474Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-29T17:08:17.474Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 7,
               "Title": "spin_Unit_Tests.c",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Section-1-Group-1\\Spin Module\\Spin Module\\spin_Unit_Tests.c",
               "RelativeDocumentMoniker": "Spin Module\\spin_Unit_Tests.c",
               "ToolTip": "C:\\Users\\User\\source\\repos\\Section-1-Group-1\\Spin Module\\Spin Module\\spin_Unit_Tests.c",
               "RelativeToolTip": "Spin Module\\spin_Unit_Tests.c",
-              "ViewState": "AQIAABIAAAAAAAAAAAAAACQAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACQAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2024-03-28T18:30:42.291Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-28T18:30:42.291Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "spin_Unit_Tests.h",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Section-1-Group-1\\Spin Module\\Spin Module\\spin_Unit_Tests.h",
               "RelativeDocumentMoniker": "Spin Module\\spin_Unit_Tests.h",
@@ -108,25 +120,23 @@
               "RelativeToolTip": "Spin Module\\spin_Unit_Tests.h",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-03-28T18:30:29.663Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-28T18:30:29.663Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
               "Title": "calculateWinnings_Unit_Tests.c",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Section-1-Group-1\\Spin Module\\Spin Module\\calculateWinnings_Unit_Tests.c",
               "RelativeDocumentMoniker": "Spin Module\\calculateWinnings_Unit_Tests.c",
               "ToolTip": "C:\\Users\\User\\source\\repos\\Section-1-Group-1\\Spin Module\\Spin Module\\calculateWinnings_Unit_Tests.c",
               "RelativeToolTip": "Spin Module\\calculateWinnings_Unit_Tests.c",
-              "ViewState": "AQIAAFEAAAAAAAAAAAAAAGUAAAAEAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAGUAAAAEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2024-03-28T18:25:25.46Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-28T18:25:25.46Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 4,
               "Title": "calculateWinnings_Unit_Test.h",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Section-1-Group-1\\Spin Module\\Spin Module\\calculateWinnings_Unit_Test.h",
               "RelativeDocumentMoniker": "Spin Module\\calculateWinnings_Unit_Test.h",
@@ -134,12 +144,11 @@
               "RelativeToolTip": "Spin Module\\calculateWinnings_Unit_Test.h",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-03-28T18:23:25.87Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-28T18:23:25.87Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Spin_Module_Unit_Tests.c",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Section-1-Group-1\\Spin Module\\Spin Module\\Spin_Module_Unit_Tests.c",
               "RelativeDocumentMoniker": "Spin Module\\Spin_Module_Unit_Tests.c",
@@ -147,34 +156,19 @@
               "RelativeToolTip": "Spin Module\\Spin_Module_Unit_Tests.c",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAcAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2024-03-22T20:57:27.608Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-22T20:57:27.608Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "spin.h",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Section-1-Group-1\\Spin Module\\Spin Module\\spin.h",
-              "RelativeDocumentMoniker": "Spin Module\\spin.h",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\Section-1-Group-1\\Spin Module\\Spin Module\\spin.h",
-              "RelativeToolTip": "Spin Module\\spin.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAKAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-03-22T20:12:40.826Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 2,
               "Title": "spin.c",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Section-1-Group-1\\Spin Module\\Spin Module\\spin.c",
               "RelativeDocumentMoniker": "Spin Module\\spin.c",
               "ToolTip": "C:\\Users\\User\\source\\repos\\Section-1-Group-1\\Spin Module\\Spin Module\\spin.c",
               "RelativeToolTip": "Spin Module\\spin.c",
-              "ViewState": "AQIAAMMAAAAAAAAAAAAAANsAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAANsAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2024-03-22T17:13:13.319Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-22T17:13:13.319Z"
             }
           ]
         }
