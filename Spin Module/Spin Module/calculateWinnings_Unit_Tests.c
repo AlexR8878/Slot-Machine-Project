@@ -39,10 +39,10 @@ void testCalculateWinnings() {
     assert(fabs(winningsMinBetEdge - (1.0 * 1.5)) < 0.01); // 1.5x multiplier for one line
 
     // Test 7: Edge case with min symbol value and all lines match
-    char spinResultsMinSymbolsEdge[3][3] = { {'>', '>', '>'}, {'>', '>', '>'}, {'>', '>', '>'} };
+    char spinResultsMinSymbolsEdge[3][3] = { {'^', '^', '^'}, {'^', '^', '^'}, {'^', '^', '^'} };
     double winningsMinSymbolsEdge = calculateWinnings(3, 10.0, spinResultsMinSymbolsEdge);
     printf("Actual winnings for test 7: %.2f\n", winningsMinSymbolsEdge);
-    assert(fabs(winningsMinSymbolsEdge - 0.3) < 0.01);
+    assert(fabs(winningsMinSymbolsEdge - 2.5 * 3.0 * 10) < 0.01);
 
     // Test 8: One line bet with "X" pattern (should not apply for one line bet)
     char spinResultsOneLineX[3][3] = { {'$', '@', '$'}, {'$', '$', '$'}, {'$', '%', '$'} };
@@ -98,8 +98,8 @@ void testCalculateWinnings() {
     printf("Actual winnings for test 14a: %.2f\n", winningsThreeLinesXTop);
     assert(fabs(winningsThreeLinesXTop - 100.0) < 0.01); // Only top line considered, "X" pattern will not apply
 
-    // Test 14b: Three line bet with "X" pattern and top line match
-    char spinResultsThreeLinesXBottom[3][3] = { {'$', '$', '$'}, {'@', '$', '&'}, {'$', '%', '$'} };
+    // Test 14b: Three line bet with "X" pattern and bottom line match
+    char spinResultsThreeLinesXBottom[3][3] = { {'$', '%', '$'}, {'@', '$', '&'}, {'$', '$', '$'} };
     double winningsThreeLinesXBottom = calculateWinnings(3, 10.0, spinResultsThreeLinesXBottom);
     printf("Actual winnings for test 14b: %.2f\n", winningsThreeLinesXBottom);
     assert(fabs(winningsThreeLinesXBottom - 100.0) < 0.01); // Only top line considered, "X" pattern will not apply

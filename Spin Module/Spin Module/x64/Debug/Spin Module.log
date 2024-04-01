@@ -1,4 +1,2 @@
-﻿  spin.c
-C:\Users\User\source\repos\Section-1-Group-1\Spin Module\Spin Module\spin.c(158,37): warning C4244: 'function': conversion from 'double' to 'float', possible loss of data
-C:\Users\User\source\repos\Section-1-Group-1\Spin Module\Spin Module\spin.c(167,94): warning C4244: 'function': conversion from 'double' to 'float', possible loss of data
+﻿  Spin_Module_Unit_Tests.c
   Spin Module.vcxproj -> C:\Users\User\source\repos\Section-1-Group-1\Spin Module\x64\Debug\Spin Module.exe

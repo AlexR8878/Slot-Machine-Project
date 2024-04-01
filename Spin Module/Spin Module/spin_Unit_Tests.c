@@ -24,7 +24,7 @@ void testSpin1() {
     assert(testAccount.balance != 100.0);
     assert(testAccount.winnings >= 0.0);
 
-    printf("spin test passed.\n");
+    printf("Spin Test Passed.\n");
 
     // Clean up
     if (remove("test_output_spin.txt") != 0) {
@@ -33,21 +33,4 @@ void testSpin1() {
     else {
         printf("Test output file successfully deleted.\n");
     }
-}
-
-
-// Test function for spin
-void testSpin2() {
-    // Seed the random number generator
-    srand((unsigned int)time(NULL));
-
-    // Set up a test account
-    Account testAccount = { 0, "testUser", 100.0, 0.0 };
-
-    // Call the spin function with test parameters
-    spin(&testAccount, 10.0, 1);
-
-    // Output is displayed to the console, showing the spinning effect and results
-    spin(&testAccount, 10.0, 1);
-
 }

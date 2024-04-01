@@ -6,10 +6,10 @@
 
 int main() {
     srand((unsigned int)time(NULL));
-
+    
     simulateStartSpinModule();
-    /*testSpin2();
+    testSpin1();
     testCalculateWinnings();
-    testSpin1();*/
+    
     return 0;
 }
