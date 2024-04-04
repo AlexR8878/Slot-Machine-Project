@@ -12,7 +12,7 @@ int main() {
 
     // Loop unitl a valid username is entered or the user exits
 
-    const char* filename = "user_financials.txt";
+    const char* filename = "File.txt";
     bool usernameFound = false;
     while (!usernameFound) {
         printf("Enter your username (or 'exit' to quit): ");
