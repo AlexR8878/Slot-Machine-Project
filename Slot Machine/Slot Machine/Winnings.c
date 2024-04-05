@@ -3,17 +3,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-Account* initializeFinancials(double initialAccount) {
-    Account* financials = (Account*)malloc(sizeof(Account));
-    if (financials == NULL) {
-        fprintf(stderr, "Memory allocation failed\n");
-        exit(EXIT_FAILURE);
-    }
-    financials->balance = initialAccount;
-    financials->winnings = 0.0;
-    return financials;
-}
-
 void displayWinnings(Account* financials) {
     printf("Total Earnings: $%.2f\n", financials->winnings);
     printf("Current Account: $%.2f\n", financials->balance);
@@ -23,36 +12,23 @@ void updateAccount(Account* financials, double FundsToAdd) {
     financials->balance += FundsToAdd;
 }
 
-void freeFinancials(Account* financials) {
-    free(financials);
-}
-
-Account* loadFinancialsFromFile(const char* filename, const char* username) {
+void loadFinancialsFromFile(const char* filename, Account* financials) {
     FILE* file = fopen(filename, "r");
     if (file == NULL) {
         perror("Failed to open file");
-        return NULL;
+        return; // This function should not return a value since it's return type is void
     }
 
     char buffer[MAXUSERNAMELENGTH];
-    double initialAccount, winnings;
-    while (fscanf(file, "%s", buffer) == 1) {
-        if (strcmp(buffer, username) == 0) {
-            if (fscanf(file, "%lf %lf", &initialAccount, &winnings) == 2) {
-                Account* financials = initializeFinancials(initialAccount);
-                strcpy(financials->username, username);
-                financials->winnings = winnings;
-                fclose(file);
-                return financials;
-            }
-            break;
+    double balance, winnings;
+    while (fscanf(file, "%s %lf %lf", buffer, &balance, &winnings) == 3) {
+        if (strcmp(financials->username, buffer) == 0) {
+            financials->winnings = winnings;
+            financials->balance = balance;
+            break; // Found the record, no need to continue reading the file
         }
-        // Skip to the next record
-        fscanf(file, "%lf %lf", &initialAccount, &winnings); // Assume these reads are successful for simplicity
     }
-
     fclose(file);
-    return NULL;
 }
 
 void saveFinancialsToFile(const char* filename, Account* financials) {
@@ -71,7 +47,7 @@ void startWinningsModule(Account* userFinancials) {
     const char* filename = "File.txt";
 
     // Load user's financials from a file
-    userFinancials = loadFinancialsFromFile(filename, userFinancials);
+    loadFinancialsFromFile(userFinancials, filename);
 
     // Display balance and total earnings
     displayWinnings(userFinancials);
@@ -82,7 +58,6 @@ void startWinningsModule(Account* userFinancials) {
     scanf(" %c", &response);
     if (response != 'y' && response != 'Y') {
         printf("Returning to the main menu.\n");
-        freeFinancials(userFinancials);
         return EXIT_SUCCESS;
     }
 
@@ -105,7 +80,7 @@ void startWinningsModule(Account* userFinancials) {
         }
 
         // Update balance
-        updateBalance(userFinancials, addToBalance);
+        updateAccount(userFinancials, addToBalance);
 
         // Display updated balance and total earnings
         displayWinnings(userFinancials);
@@ -118,15 +93,12 @@ void startWinningsModule(Account* userFinancials) {
         }
     }
 
-    updateBalance(userFinancials, addToBalance);
+    updateAccount(userFinancials, addToBalance);
 
     // Display updated balance and total earnings
     displayWinnings(userFinancials);
 
     saveFinancialsToFile(filename, userFinancials);
-
-    // Free the allocated memory for financials
-    freeFinancials(userFinancials);
 
     return EXIT_SUCCESS;
 }

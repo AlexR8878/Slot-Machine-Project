@@ -17,7 +17,7 @@ void mainMenu(Account* user) {
         printf("3. Scoreboard\n");
         printf("4. Exit\n");
         printf("********************************\n");
-        printf("Enter your choice (1-5): ");
+        printf("Enter your choice (1-4): ");
         fgets(input, 10, stdin); // Read the input as a string
 
         // Check for decimal point (can reuse function from Spin-Module)
@@ -33,10 +33,10 @@ void mainMenu(Account* user) {
         if (isValidInput && sscanf(input, "%d", &choice) == 1 && choice >= 1 && choice <= 4) {
             switch (choice) {
             case 1:
-                startSpinModule(user);
+                startSpinModule(&user);
                 break;
             case 2:
-                startWinningsModule(user);
+                startWinningsModule(&user);
                 break;
             case 3:
                 displayTopWinners();
@@ -50,7 +50,7 @@ void mainMenu(Account* user) {
             }
         }
         else {
-            printf("Invalid choice. Please enter a whole number between 1 and 5.\n");
+            printf("Invalid choice. Please enter a whole number between 1 and 4.\n");
         }
     }
 

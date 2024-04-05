@@ -1,5 +1,7 @@
-﻿  Account.c
-  AgeCheck.c
-  main.c
-  Generating Code...
+﻿  Winnings.c
+C:\Users\User\source\repos\Section-1-Group-1\Slot Machine\Slot Machine\Winnings.c(25,13): warning C4013: 'strcmp' undefined; assuming extern returning int
+C:\Users\User\source\repos\Section-1-Group-1\Slot Machine\Slot Machine\Winnings.c(50,28): warning C4133: 'function': incompatible types - from 'Account *' to 'const char *'
+C:\Users\User\source\repos\Section-1-Group-1\Slot Machine\Slot Machine\Winnings.c(50,52): warning C4090: 'function': different 'const' qualifiers
+C:\Users\User\source\repos\Section-1-Group-1\Slot Machine\Slot Machine\Winnings.c(61,28): warning C4098: 'startWinningsModule': 'void' function returning a value
+C:\Users\User\source\repos\Section-1-Group-1\Slot Machine\Slot Machine\Winnings.c(103,24): warning C4098: 'startWinningsModule': 'void' function returning a value
   Slot Machine.vcxproj -> C:\Users\User\source\repos\Section-1-Group-1\Slot Machine\x64\Debug\Slot Machine.exe

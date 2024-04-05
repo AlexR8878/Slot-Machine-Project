@@ -13,3 +13,5 @@ int loginOrSignUp(char username[MAXUSERNAMELENGTH], int id, double* balance);
 void automaticFileSave(Account user);
 void getUserInfo(char username[MAXUSERNAMELENGTH], int* id);
 int checkBalance(char username[MAXUSERNAMELENGTH], int id, double* balance);
+void intializeUser(Account* currentUser);
+void freeUser(Account* currentUser);

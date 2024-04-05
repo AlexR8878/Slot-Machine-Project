@@ -89,3 +89,30 @@ int checkBalance(char username[MAXUSERNAMELENGTH], int id, double* balance) {
     printf("User not found.\n");
     return 0; // User doesn't exist
 }
+
+void intializeUser(Account* currentUser) {
+    double balance;
+    checkEligibility();
+
+    char username[MAXUSERNAMELENGTH];
+    int id;
+    getUserInfo(username, &id);
+
+    int loginResult = loginOrSignUp(username, id, &balance);
+    if (loginResult == -1) {
+        return 1;
+    }
+    currentUser = (Account*)malloc(sizeof(Account));
+    if (currentUser == NULL) {
+        printf("Error: Unable to allocate memory for user account.\n");
+        return 1;
+    }
+    strcpy(currentUser->username, username);
+    currentUser->id = id;
+    currentUser->balance = balance;
+    automaticFileSave(*currentUser);
+}
+
+void freeUser(Account* currentUser) {
+    free(currentUser);
+}
