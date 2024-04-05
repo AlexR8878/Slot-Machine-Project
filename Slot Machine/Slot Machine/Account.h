@@ -8,10 +8,10 @@ typedef struct Account {
     double winnings;
 } Account;
 
-int userExists(char username[MAXUSERNAMELENGTH], int id, double* balance);
-int loginOrSignUp(char username[MAXUSERNAMELENGTH], int id, double* balance);
-void automaticFileSave(Account user);
+void loginOrSignUp(Account* currentUser, char username[MAXUSERNAMELENGTH], int id, double* balance, double* winnings);
 void getUserInfo(char username[MAXUSERNAMELENGTH], int* id);
-int checkBalance(char username[MAXUSERNAMELENGTH], int id, double* balance);
-void intializeUser(Account* currentUser);
+void saveUserToFile(Account* user);
+void loadUserFromFile(Account* user);
+Account* intializeUser();
+void appIntialization(Account* currentUser);
 void freeUser(Account* currentUser);

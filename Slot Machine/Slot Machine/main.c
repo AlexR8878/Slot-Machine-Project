@@ -4,12 +4,13 @@
 
 int main() {
 
-    Account* currentUser = NULL;
-    intializeUser(&currentUser);
+    Account* currentUser = intializeUser();
 
-    mainMenu(&currentUser);
+    appIntialization(currentUser);
 
+    mainMenu(currentUser);
 
+    free(currentUser);
 
     return 0;
 }

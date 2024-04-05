@@ -17,6 +17,5 @@
 
 double calculateWinnings(int lines, double gambleAmount, char spinResults[3][3]);
 void spin(Account* account, double gambleAmount, int lines);
-void returnToMainMenu();
 bool isPositiveInteger(const char* str);
 void startSpinModule(Account* account);

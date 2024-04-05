@@ -118,11 +118,7 @@ void spin(Account* account, double gambleAmount, int lines) {
     printf("Your total winnings so far are %.2f\n", account->winnings);
     printf("Your new balance is %.2f\n", account->balance);
     Sleep(1000);
-}
-
-// Function to return to main menu
-void returnToMainMenu() {
-    // Function to call main menu will go here
+    saveUserToFile(account);
 }
 
 bool isPositiveInteger(const char* str) {
@@ -138,6 +134,7 @@ bool isPositiveInteger(const char* str) {
 
 // Function to start the Spin module
 void startSpinModule(Account* account) {
+    fflush(stdout); // Flush the output buffer
     double gambleAmount = 0;
     int lines = 0;
     int spins = 0;
@@ -217,7 +214,4 @@ void startSpinModule(Account* account) {
         fgets(continuePlaying, sizeof(continuePlaying), stdin); // Use fgets to read the input
 
     } while (continuePlaying[0] == 'Y' || continuePlaying[0] == 'y');
-
-
-    returnToMainMenu();
 }
