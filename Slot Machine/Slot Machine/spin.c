@@ -134,8 +134,6 @@ bool isPositiveInteger(const char* str) {
 
 // Function to start the Spin module
 void startSpinModule(Account* account) {
-    fflush(stdin);
-    fflush(stdout);
     double gambleAmount = 0;
     int lines = 0;
     int spins = 0;
@@ -212,9 +210,7 @@ void startSpinModule(Account* account) {
         printf("Your balance after %d spins is %.2f\n", spins, account->balance);
 
         printf("Do you want to continue playing? (Y/Any other key to stop playing): ");
-        fgets(continuePlaying, sizeof(continuePlaying), stdin); // Use fgets to read the input
-
-        while (getchar() != '\n');
+        scanf(" %c", &continuePlaying[0]); // Use scanf instead of fgets
 
     } while (continuePlaying[0] == 'Y' || continuePlaying[0] == 'y');
 }

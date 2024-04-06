@@ -1,1 +1,4 @@
-﻿  Slot Machine.vcxproj -> C:\Users\User\source\repos\Section-1-Group-1\Slot Machine\x64\Debug\Slot Machine.exe
+﻿  spin.c
+C:\Users\User\source\repos\Section-1-Group-1\Slot Machine\Slot Machine\spin.c(154,37): warning C4244: 'function': conversion from 'double' to 'float', possible loss of data
+C:\Users\User\source\repos\Section-1-Group-1\Slot Machine\Slot Machine\spin.c(163,94): warning C4244: 'function': conversion from 'double' to 'float', possible loss of data
+  Slot Machine.vcxproj -> C:\Users\User\Source\Repos\Section-1-Group-1\Slot Machine\x64\Debug\Slot Machine.exe

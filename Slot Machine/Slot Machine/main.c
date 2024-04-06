@@ -23,7 +23,7 @@ int main(int argc, char* argv[]) {
 
     Account* currentUser = intializeUser();
 
-    while (getchar() != '\n');
+    //while (getchar() != '\n');
 
     appIntialization(currentUser);
 
