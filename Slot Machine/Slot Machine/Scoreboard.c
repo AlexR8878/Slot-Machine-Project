@@ -90,4 +90,5 @@ void displayTopWinners() {
     }
 
     fclose(file);
+    while (getchar() != '\n');
 }

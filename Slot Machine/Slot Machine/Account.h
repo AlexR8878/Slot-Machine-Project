@@ -1,4 +1,5 @@
 #pragma once
+#include <stdbool.h>
 #define MAXUSERNAMELENGTH   50
 
 typedef struct Account {
@@ -15,3 +16,5 @@ void loadUserFromFile(Account* user);
 Account* intializeUser();
 void appIntialization(Account* currentUser);
 void freeUser(Account* currentUser);
+void clearStdinBuffer();
+bool isValidCode(const char* code);

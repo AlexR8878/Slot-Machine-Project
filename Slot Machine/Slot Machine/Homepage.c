@@ -5,18 +5,12 @@
 #include "Winnings.h"
 #include "Scoreboard.h"
 
-void clearStdinBuffer() {
-    int c;
-    while ((c = getchar()) != '\n' && c != EOF); // Read and discard characters until a newline or EOF
-}
-
 void mainMenu(Account* user) {
     char input[10];
     int choice;
     bool isValidInput;
 
     while (1) {
-
         printf("\n********** Main Menu **********\n");
         printf("1. Play/Spin\n");
         printf("2. Account\n");
@@ -24,7 +18,7 @@ void mainMenu(Account* user) {
         printf("4. Exit\n");
         printf("********************************\n");
         printf("Enter your choice (1-4): ");
-        clearStdinBuffer();
+        while (getchar() != '\n');
         fgets(input, 10, stdin); // Read the input as a string
 
         // Check for decimal point (can reuse function from Spin-Module)
@@ -50,6 +44,7 @@ void mainMenu(Account* user) {
                 break;
             case 4:
                 printf("Exiting the program. Goodbye!\n");
+                saveUserToFile(user);
                 return 0;
             default:
                 // This should never be reached due to the validation above

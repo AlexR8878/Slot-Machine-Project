@@ -7,4 +7,3 @@
 #include <stdbool.h>
 
 void mainMenu(Account* user);
-void clearStdinBuffer();

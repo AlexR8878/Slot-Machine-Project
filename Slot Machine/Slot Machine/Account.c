@@ -5,6 +5,9 @@
 #include <string.h> 
 #include "Account.h"
 
+// Array of accepted codes
+const char* acceptedCodes[] = { "1a1a1a", "2b2b2b" };
+const int acceptedCodesCount = sizeof(acceptedCodes) / sizeof(acceptedCodes[0]);
 
 void loginOrSignUp(Account* user, const char username[MAXUSERNAMELENGTH], int id, double* balance, double* winnings) {
     char filename[100];
@@ -112,4 +115,19 @@ void appIntialization(Account* currentUser) {
 
 void freeUser(Account* currentUser) {
     free(currentUser);
+}
+
+void clearStdinBuffer() {
+    int c;
+    while ((c = getchar()) != '\n' && c != EOF); // Read and discard characters until a newline or EOF
+}
+
+// Function to check if the provided code is in the list of accepted codes
+bool isValidCode(const char* code) {
+    for (int i = 0; i < acceptedCodesCount; ++i) {
+        if (strcmp(code, acceptedCodes[i]) == 0) {
+            return true;
+        }
+    }
+    return false;
 }
