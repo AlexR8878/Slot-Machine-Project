@@ -3,8 +3,8 @@
 #include "Homepage.h"
 
 int main(int argc, char* argv[]) {
-    argc = 7;
-    argv[1] = "1a1a1a";
+    //argc = 7; // for testing purposes
+    //argv[1] = "1a1a1a"; // for testing purpose
     // Check if a code was provided as a command-line argument
     if (argc < 2) {
         printf("No code provided. Please start the application with a valid code.\n");
@@ -20,7 +20,10 @@ int main(int argc, char* argv[]) {
         printf("Invalid code provided. Please start the application with a valid code.\n");
         return 1;
     }
+
     Account* currentUser = intializeUser();
+
+    while (getchar() != '\n');
 
     appIntialization(currentUser);
 
