@@ -10,9 +10,11 @@ const char* ageCheck(char input[]) {
     }
     else if (strcmp(input, "N") == 0 || strcmp(input, "n") == 0) {
         return "You are not eligible to use the application.\n";
+        exit(1);
     }
     else {
         return "Invalid input.\n";
+        exit(1);
     }
 }
 
