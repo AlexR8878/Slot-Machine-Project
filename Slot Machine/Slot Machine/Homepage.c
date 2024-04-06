@@ -43,9 +43,9 @@ void mainMenu(Account* user) {
                 displayTopWinners();
                 break;
             case 4:
-                printf("Exiting the program. Goodbye!\n");
                 saveUserToFile(user);
-                return 0;
+                printf("Exiting the program. Goodbye!\n");                
+                exit(1);
             default:
                 // This should never be reached due to the validation above
                 break;
@@ -55,6 +55,4 @@ void mainMenu(Account* user) {
             printf("Invalid choice. Please enter a whole number between 1 and 4.\n");
         }
     }
-
-    return 0;
 }
