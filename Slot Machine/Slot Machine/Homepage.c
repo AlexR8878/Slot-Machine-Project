@@ -40,7 +40,7 @@ void mainMenu(Account* user) {
                 startWinningsModule(user);
                 break;
             case 3:
-                displayTopWinners();
+                scoreboardFeature();
                 break;
             case 4:
                 saveUserToFile(user);
