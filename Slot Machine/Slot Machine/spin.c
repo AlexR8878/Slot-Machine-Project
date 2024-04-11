@@ -155,7 +155,7 @@ void startSpinModule(Account* account) {
                 printf("Invalid amount. Please enter a positive double number up to 2 decimal places.\n");
                 gambleAmount = 0;
             }
-            if (gambleAmount <= 0 || gambleAmount > account->balance) {
+            else if (gambleAmount <= 0 || gambleAmount > account->balance) {
                 printf("Invalid amount. Please enter a positive number up to your current balance of %.2f\n", account->balance);
                 gambleAmount = 0;
             }

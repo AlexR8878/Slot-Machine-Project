@@ -11,7 +11,8 @@ void mainMenu(Account* user) {
     bool isValidInput;
 
     while (1) {
-        printf("\n********** Main Menu **********\n");
+        system("cls");
+        printf("\n********** STAR SPINZ **********\n");
         printf("1. Play/Spin\n");
         printf("2. Account\n");
         printf("3. Scoreboard\n");
@@ -52,7 +53,9 @@ void mainMenu(Account* user) {
             }
         }
         else {
-            printf("Invalid choice. Please enter a whole number between 1 and 4.\n");
+            printf("Invalid choice. Please enter a whole number between 1 and 4.");
+            Sleep(1000);
+            system("cls");            
         }
     }
 }

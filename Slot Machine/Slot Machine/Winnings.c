@@ -39,7 +39,9 @@ void startWinningsModule(Account* userFinancials) {
                 displayWinnings(userFinancials);
             }
             else {
+                
                 fprintf(stderr, "Invalid input\n");
+                Sleep(1000);
                 // Clear input buffer
                 while (getchar() != '\n');
             }
@@ -51,8 +53,14 @@ void startWinningsModule(Account* userFinancials) {
             }
         }
     }
-    else {
+    if (response == 'n' || response == 'N') {
         printf("Returning to the main menu.\n");
+        Sleep(1000);
+    }
+    else {                
+        fprintf(stderr, "Invalid input\n");
+        printf("Returning to the main menu.\n");
+        Sleep(1000);
     }
 
     //updateAccount(userFinancials, addToBalance);

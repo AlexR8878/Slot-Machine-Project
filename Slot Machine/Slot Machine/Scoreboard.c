@@ -5,4 +5,5 @@ void scoreboardFeature() {
 	printf("+-----------------+\n");
 	printf("|   Coming Soon!  |\n");
 	printf("+-----------------+\n");
+	while (getchar() != '\n');
 }
